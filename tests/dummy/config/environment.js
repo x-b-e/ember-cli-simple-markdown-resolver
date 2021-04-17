@@ -21,6 +21,12 @@ module.exports = function (environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    'ember-cli-simple-markdown-resolver': {
+      folders: {
+        articles: 'app/articles',
+      },
+    },
   };
 
   if (environment === 'development') {

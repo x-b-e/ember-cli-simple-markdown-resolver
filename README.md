@@ -47,7 +47,7 @@ Usage
 
 Ember CLI Markdown Resolver enables markdown content to be retrieved via the `markdownResolver` service.
 
-### `this.get('markdownResolver').file(type, path)`
+### `this.markdownResolver.file(type, path)`
 
 The `file` method returns promisified markdown content, allowing the content to be chainable via `.then()`.
 
@@ -78,7 +78,7 @@ Each markdown file exposes the path, raw content, frontmatter attributes and its
 {{model.children}} <!-- Array of child content -->
 ```
 
-### `this.get('markdownResolver').tree(type)`
+### `this.markdownResolver.tree(type)`
 
 The `tree` method returns a tree object for a given folder, allowing menu interfaces to be built from the markdown file structure.
 

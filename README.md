@@ -110,6 +110,20 @@ Lorem ipsum dolor sit amet...
 ```
 
 
+## Helpers
+
+```hbs
+<!-- Gets the title property of the markdown file -->
+{{get (get-markdown-file 'guides' 'nested/page-slug') 'attributes.title'}}
+
+<!-- Shorthand to get content from markdown file -->
+{{get-markdown-content 'guides' 'nested/page-slug'}}
+
+<!-- Get the markdown tree -->
+{{get (get-markdown-tree 'guides') 'name'}}
+```
+
+
 License
 ------------------------------------------------------------------------------
 
